@@ -1,6 +1,6 @@
-# 智能问答系统 项目
+# 个人VibeCoding LLM+RAG的智能问答系统（本地部署，可直接下载使用）
 
-一个基于 Flask 和 LangChain 的轻量级 RAG（检索增强生成）应用，支持文档上传、知识库管理、智能问答等功能。
+一个基于 Flask 和 LangChain 的轻量级 RAG 应用，支持多模态文档上传、用于个人轻量化知识库管理、智能问答。
 
 ## 功能特性
 
@@ -27,7 +27,7 @@ install chromadb即可，轻量级应用型，企业项目用的是Milvus）
 #### 使用 uv（推荐）
 
 ```bash
-# 安装 uv（如果尚未安装）
+# 安装 uv（如果尚未安装，需要先下载miniconda或者python然后全局安装）
 pip install uv
 
 # 使用 uv 安装依赖
@@ -36,13 +36,17 @@ uv sync
 
 ### 2. 配置数据库
 
-#### 方式一：使用本地 MySQL
+#### 使用本地 MySQL
+（安装地址及教程推荐：https://dev.mysql.com/downloads/mysql；
+https://blog.csdn.net/yellow1019/article/details/134616848）
 
 ```bash
 # 登录 MySQL，前往bin路径下admin运行powershell
+（例如我的mysql下载的msi文件放在路径：D:\mysql\mysql-8.0.45-winx64（可根据你的情况而定））
+-->在D:\mysql\mysql-8.0.45-winx64\bin下运行
 .\mysql -u root -p
 
-# 创建数据库
+# 初始化创建数据库
 CREATE DATABASE rag CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 # 创建用户（可选）
@@ -51,23 +55,16 @@ GRANT ALL PRIVILEGES ON rag.* TO 'rag_user'@'localhost';
 FLUSH PRIVILEGES;
 ```
 
-#### 方式二：使用 Docker 快速启动 MySQL
 
-```bash
-docker run --name rag-mysql \
-  -e MYSQL_ROOT_PASSWORD=123456 \
-  -e MYSQL_DATABASE=rag \
-  -p 3306:3306 \
-  -d mysql:8.0
 ```
 
 ### 3. 启动向量数据库
 
-#### 使用 Chroma（默认，无需额外配置）
+#### 使用 Chroma（默认选项，你也可以选择Milvus Lite，无需额外配置）
 
 Chroma 会自动在本地创建，无需额外配置。
 
-#### 使用 Milvus（可选）
+#### 使用 Milvus（需要自行配置）
 
 ```bash
 # 启动 Milvus 及其依赖服务
@@ -79,14 +76,6 @@ docker-compose ps
 
 ### 4. 启动应用
 
-```bash
-# 激活虚拟环境
-# Windows:
-.venv\Scripts\activate
-# Linux/Mac:
-source .venv/bin/activate
-
-# 启动应用
 uv run main.py
 ```
 
@@ -99,7 +88,7 @@ INFO - 正在启动RAG服务器在0.0.0.0:5000
 
 ### 5. 访问应用
 
-在浏览器中打开：`http://localhost:5000`
+在浏览器中打开：`http://localhost:5000` 就可以进入知识库啦~
 
 ## 项目结构
 
@@ -124,13 +113,7 @@ INFO - 正在启动RAG服务器在0.0.0.0:5000
 └── docker-compose.yml # Docker Compose 配置
 ```
 
-## 开发说明
 
-### 添加新的依赖
-
-```bash
-uv add package-name
-```
 
 ## 许可证
 
