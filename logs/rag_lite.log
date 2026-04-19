@@ -1,0 +1,196 @@
+2026-04-19 18:14:53,088 - app - INFO - __init__.py:14 - 初始化数据库...
+2026-04-19 18:14:53,100 - app.utils.db - ERROR - db.py:80 - 初始化数据库失败:(pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-19 18:14:53,101 - app - WARNING - __init__.py:18 - 数据库初始化失败
+2026-04-19 18:14:53,760 - app.services.storage.local_storage - INFO - local_storage.py:20 - 本地存储初始化成功：目录：C:\Users\m7300\Desktop\smart_rag_v3\storages
+2026-04-19 18:15:21,148 - app.utils.db - ERROR - db.py:48 - 数据库会话错误:(pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-19 18:15:47,875 - app - INFO - __init__.py:14 - 初始化数据库...
+2026-04-19 18:15:47,883 - app.utils.db - ERROR - db.py:80 - 初始化数据库失败:(pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-19 18:15:47,883 - app - WARNING - __init__.py:18 - 数据库初始化失败
+2026-04-19 18:15:48,056 - app.services.storage.local_storage - INFO - local_storage.py:20 - 本地存储初始化成功：目录：C:\Users\m7300\Desktop\smart_rag_v3\storages
+2026-04-19 18:15:55,427 - app.utils.db - ERROR - db.py:48 - 数据库会话错误:(pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-19 18:20:05,967 - app - INFO - __init__.py:14 - 初始化数据库...
+2026-04-19 18:20:06,562 - app - INFO - __init__.py:16 - 初始化数据库成功
+2026-04-19 18:20:06,764 - app.services.storage.local_storage - INFO - local_storage.py:20 - 本地存储初始化成功：目录：C:\Users\m7300\Desktop\smart_rag_v3\storages
+2026-04-19 18:20:30,519 - sentence_transformers.SentenceTransformer - INFO - SentenceTransformer.py:227 - Load pretrained SentenceTransformer: C:/Users/m7300/.cache/modelscope/hub/models/sentence-transformers/all-MiniLM-L6-v2
+2026-04-19 18:20:30,863 - app.utils.embedding_factory - INFO - embedding_factory.py:26 - 创建HuggingFaceEmbeddings:C:/Users/m7300/.cache/modelscope/hub/models/sentence-transformers/all-MiniLM-L6-v2
+2026-04-19 18:20:30,864 - app.services.vectordb.chroma - INFO - chroma.py:17 - ChromaDB已经初始化，持久化目录为:./chroma_db
+2026-04-19 18:20:31,048 - app.utils.llm_factory - INFO - llm_factory.py:15 - 已经注册了LLM提供商:deepseek
+2026-04-19 18:20:31,048 - app.utils.llm_factory - INFO - llm_factory.py:15 - 已经注册了LLM提供商:openai
+2026-04-19 18:20:31,049 - app.utils.llm_factory - INFO - llm_factory.py:15 - 已经注册了LLM提供商:ollama
+2026-04-19 18:20:31,150 - py.warnings - WARNING - warnings.py:110 - C:\Users\m7300\Desktop\smart_rag_v3\.venv\Lib\site-packages\jieba\__init__.py:44: SyntaxWarning: invalid escape sequence '\.'
+  re_han_default = re.compile("([\u4E00-\u9FD5a-zA-Z0-9+#&\._%\-]+)", re.U)
+
+2026-04-19 18:20:31,151 - py.warnings - WARNING - warnings.py:110 - C:\Users\m7300\Desktop\smart_rag_v3\.venv\Lib\site-packages\jieba\__init__.py:46: SyntaxWarning: invalid escape sequence '\s'
+  re_skip_default = re.compile("(\r\n|\s)", re.U)
+
+2026-04-19 18:20:31,160 - py.warnings - WARNING - warnings.py:110 - C:\Users\m7300\Desktop\smart_rag_v3\.venv\Lib\site-packages\jieba\finalseg\__init__.py:78: SyntaxWarning: invalid escape sequence '\.'
+  re_skip = re.compile("([a-zA-Z0-9]+(?:\.\d+)?%?)")
+
+2026-04-19 18:20:31,356 - py.warnings - WARNING - warnings.py:110 - C:\Users\m7300\Desktop\smart_rag_v3\.venv\Lib\site-packages\jieba\_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+
+2026-04-19 18:20:31,965 - __main__ - INFO - main.py:13 - 正在启动RAGLite服务器在0.0.0.0:5000
+2026-04-19 18:20:31,980 - werkzeug - INFO - _internal.py:97 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.59:5000
+2026-04-19 18:20:31,980 - werkzeug - INFO - _internal.py:97 - [33mPress CTRL+C to quit[0m
+2026-04-19 18:20:32,247 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:20:32] "GET / HTTP/1.1" 200 -
+2026-04-19 18:20:33,256 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:20:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-19 18:20:39,997 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:20:39] "GET /kb HTTP/1.1" 200 -
+2026-04-19 18:20:48,638 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:20:48] "GET / HTTP/1.1" 200 -
+2026-04-19 18:20:53,682 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:20:53] "GET /chat HTTP/1.1" 200 -
+2026-04-19 18:20:53,979 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:20:53] "GET /api/v1/sessions HTTP/1.1" 200 -
+2026-04-19 18:20:58,294 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:20:58] "GET / HTTP/1.1" 200 -
+2026-04-19 18:33:43,367 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:33:43] "GET /chat HTTP/1.1" 200 -
+2026-04-19 18:33:43,411 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:33:43] "GET /api/v1/sessions HTTP/1.1" 200 -
+2026-04-19 18:33:48,738 - ChatSessionService - INFO - chat_session_service.py:23 - 已经创建聊天会话:b944aa3e4abd4f1eb7e7d28ea255c775
+2026-04-19 18:33:48,744 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:33:48] "POST /api/v1/sessions HTTP/1.1" 200 -
+2026-04-19 18:33:49,083 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:33:49] "GET /api/v1/sessions HTTP/1.1" 200 -
+2026-04-19 18:33:50,840 - app.utils.llm_factory - INFO - llm_factory.py:54 - 已经创建DeepSeek LLM:{model_name}
+2026-04-19 18:33:50,841 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:33:50] "POST /api/v1/chat HTTP/1.1" 200 -
+2026-04-19 18:33:50,855 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:33:50] "GET /api/v1/sessions HTTP/1.1" 200 -
+2026-04-19 18:33:51,427 - httpx - INFO - _client.py:1025 - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2026-04-19 18:33:51,431 - app.services.chat_service - ERROR - chat_service.py:35 - 流式生成时出错:Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-04-19 18:34:00,759 - ChatSessionService - INFO - chat_session_service.py:53 - 已经删除了1个聊天会话
+2026-04-19 18:34:00,764 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:34:00] "DELETE /api/v1/sessions HTTP/1.1" 200 -
+2026-04-19 18:34:01,026 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:34:01] "GET /api/v1/sessions HTTP/1.1" 200 -
+2026-04-19 18:34:03,011 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:34:03] "GET /kb HTTP/1.1" 200 -
+2026-04-19 18:34:35,422 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:34:35] "GET / HTTP/1.1" 200 -
+2026-04-19 18:34:56,128 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:34:56] "GET /kb HTTP/1.1" 200 -
+2026-04-19 18:35:03,487 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:35:03] "GET /kb HTTP/1.1" 200 -
+2026-04-19 18:35:51,729 - app.blueprints.knowledgebase - INFO - knowledgebase.py:47 - 收到新的知识库的封面图片：文件名:李熠晞_AI产品经理_4年.pdf,大小:350221,内容类型:application/pdf
+2026-04-19 18:35:51,730 - app.blueprints.utils - WARNING - utils.py:25 - ValueError in api_create:不支持的图片格式:pdf,支持的格式为jpg, png, gif, jpeg, webp
+2026-04-19 18:35:51,730 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:35:51] "[31m[1mPOST /api/v1/kb HTTP/1.1[0m" 400 -
+2026-04-19 18:36:45,673 - KnowledgebaseService - INFO - knowledgebase_service.py:66 - 创建知识库成功:ID:{kb.id}
+2026-04-19 18:36:45,773 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:36:45] "POST /api/v1/kb HTTP/1.1" 200 -
+2026-04-19 18:36:45,941 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:36:45] "GET /kb HTTP/1.1" 200 -
+2026-04-19 18:36:50,073 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:36:50] "GET /kb/9c24c6efbb5e4e218ebd00491954091e HTTP/1.1" 200 -
+2026-04-19 18:37:16,550 - app.blueprints.knowledgebase - INFO - knowledgebase.py:118 - 收到知识库的新的封面图片：文件名:证件照.jpg,大小:880151,内容类型:image/jpeg
+2026-04-19 18:37:16,553 - app.services.storage.local_storage - INFO - local_storage.py:32 - 文件已经上传:covers/9c24c6efbb5e4e218ebd00491954091e.jpg
+2026-04-19 18:37:16,557 - KnowledgebaseService - INFO - knowledgebase_service.py:215 - 更新知识库:9c24c6efbb5e4e218ebd00491954091e 简历
+2026-04-19 18:37:16,649 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:37:16] "PUT /api/v1/kb/9c24c6efbb5e4e218ebd00491954091e HTTP/1.1" 200 -
+2026-04-19 18:37:16,667 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:37:16] "GET /kb HTTP/1.1" 200 -
+2026-04-19 18:37:16,999 - app.services.storage.local_storage - INFO - local_storage.py:47 - 文件已经下载成功:C:\Users\m7300\Desktop\smart_rag_v3\storages\covers\9c24c6efbb5e4e218ebd00491954091e.jpg
+2026-04-19 18:37:17,000 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:37:17] "GET /kb/9c24c6efbb5e4e218ebd00491954091e/cover HTTP/1.1" 200 -
+2026-04-19 18:37:18,570 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:37:18] "GET /kb/9c24c6efbb5e4e218ebd00491954091e HTTP/1.1" 200 -
+2026-04-19 18:37:32,628 - app.services.storage.local_storage - INFO - local_storage.py:32 - 文件已经上传:documents/9c24c6efbb5e4e218ebd00491954091e/516947dc1a584f81844509e706735d3b/简历.pdf
+2026-04-19 18:37:32,637 - DocumentService - INFO - document_service.py:62 - 文档上传成功:516947dc1a584f81844509e706735d3b
+2026-04-19 18:37:32,644 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:37:32] "POST /api/v1/knowledgebases/9c24c6efbb5e4e218ebd00491954091e/documents HTTP/1.1" 200 -
+2026-04-19 18:37:32,668 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:37:32] "GET /kb/9c24c6efbb5e4e218ebd00491954091e HTTP/1.1" 200 -
+2026-04-19 18:37:35,249 - DocumentService - INFO - document_service.py:91 - 提交文档处理任务:516947dc1a584f81844509e706735d3b
+2026-04-19 18:37:35,250 - DocumentService - INFO - document_service.py:106 - 开始处理文档:516947dc1a584f81844509e706735d3b
+2026-04-19 18:37:35,251 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:37:35] "POST /api/v1/documents/516947dc1a584f81844509e706735d3b/process HTTP/1.1" 200 -
+2026-04-19 18:37:35,268 - DocumentService - INFO - document_service.py:152 - 文档516947dc1a584f81844509e706735d3b状态已经更新为processing状态了
+2026-04-19 18:37:35,291 - app.services.storage.local_storage - INFO - local_storage.py:47 - 文件已经下载成功:C:\Users\m7300\Desktop\smart_rag_v3\storages\documents\9c24c6efbb5e4e218ebd00491954091e\516947dc1a584f81844509e706735d3b\简历.pdf
+2026-04-19 18:37:36,213 - DocumentService - INFO - document_service.py:157 - 加载到2个文档
+2026-04-19 18:37:36,214 - DocumentService - INFO - document_service.py:168 - 加载到14个分块
+2026-04-19 18:37:36,320 - chromadb.telemetry.product.posthog - INFO - posthog.py:22 - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-04-19 18:37:38,104 - app.services.vectordb.chroma - INFO - chroma.py:35 - 已经向ChromDB集合kb_9c24c6efbb5e4e218ebd00491954091e添加了14个文档
+2026-04-19 18:37:38,116 - DocumentService - INFO - document_service.py:199 - 文档516947dc1a584f81844509e706735d3b处理完成,分块数量为14
+2026-04-19 18:37:38,998 - DocumentService - INFO - document_service.py:91 - 提交文档处理任务:516947dc1a584f81844509e706735d3b
+2026-04-19 18:37:39,000 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:37:39] "GET /kb/9c24c6efbb5e4e218ebd00491954091e HTTP/1.1" 200 -
+2026-04-19 18:37:39,000 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:37:39] "POST /api/v1/documents/516947dc1a584f81844509e706735d3b/process HTTP/1.1" 200 -
+2026-04-19 18:37:39,000 - DocumentService - INFO - document_service.py:106 - 开始处理文档:516947dc1a584f81844509e706735d3b
+2026-04-19 18:37:39,230 - app.services.vectordb.chroma - INFO - chroma.py:56 - 已通过filter条件删除14个文档
+2026-04-19 18:37:39,231 - app.services.vectordb.chroma - INFO - chroma.py:84 - 已经从ChromDB集合kb_9c24c6efbb5e4e218ebd00491954091e删除文档
+2026-04-19 18:37:39,231 - DocumentService - INFO - document_service.py:152 - 文档516947dc1a584f81844509e706735d3b状态已经更新为processing状态了
+2026-04-19 18:37:39,232 - app.services.storage.local_storage - INFO - local_storage.py:47 - 文件已经下载成功:C:\Users\m7300\Desktop\smart_rag_v3\storages\documents\9c24c6efbb5e4e218ebd00491954091e\516947dc1a584f81844509e706735d3b\简历.pdf
+2026-04-19 18:37:39,505 - DocumentService - INFO - document_service.py:157 - 加载到2个文档
+2026-04-19 18:37:39,506 - DocumentService - INFO - document_service.py:168 - 加载到14个分块
+2026-04-19 18:37:40,285 - app.services.vectordb.chroma - INFO - chroma.py:35 - 已经向ChromDB集合kb_9c24c6efbb5e4e218ebd00491954091e添加了14个文档
+2026-04-19 18:37:40,297 - DocumentService - INFO - document_service.py:199 - 文档516947dc1a584f81844509e706735d3b处理完成,分块数量为14
+2026-04-19 18:37:42,554 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:37:42] "GET /documents/516947dc1a584f81844509e706735d3b/chunks HTTP/1.1" 200 -
+2026-04-19 18:37:54,453 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:37:54] "GET /kb/9c24c6efbb5e4e218ebd00491954091e HTTP/1.1" 200 -
+2026-04-19 18:37:57,846 - DocumentService - INFO - document_service.py:91 - 提交文档处理任务:516947dc1a584f81844509e706735d3b
+2026-04-19 18:37:57,847 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:37:57] "POST /api/v1/documents/516947dc1a584f81844509e706735d3b/process HTTP/1.1" 200 -
+2026-04-19 18:37:57,847 - DocumentService - INFO - document_service.py:106 - 开始处理文档:516947dc1a584f81844509e706735d3b
+2026-04-19 18:37:57,973 - app.services.vectordb.chroma - INFO - chroma.py:56 - 已通过filter条件删除14个文档
+2026-04-19 18:37:57,974 - app.services.vectordb.chroma - INFO - chroma.py:84 - 已经从ChromDB集合kb_9c24c6efbb5e4e218ebd00491954091e删除文档
+2026-04-19 18:37:57,975 - DocumentService - INFO - document_service.py:152 - 文档516947dc1a584f81844509e706735d3b状态已经更新为processing状态了
+2026-04-19 18:37:57,976 - app.services.storage.local_storage - INFO - local_storage.py:47 - 文件已经下载成功:C:\Users\m7300\Desktop\smart_rag_v3\storages\documents\9c24c6efbb5e4e218ebd00491954091e\516947dc1a584f81844509e706735d3b\简历.pdf
+2026-04-19 18:37:58,246 - DocumentService - INFO - document_service.py:157 - 加载到2个文档
+2026-04-19 18:37:58,246 - DocumentService - INFO - document_service.py:168 - 加载到14个分块
+2026-04-19 18:37:58,975 - app.services.vectordb.chroma - INFO - chroma.py:35 - 已经向ChromDB集合kb_9c24c6efbb5e4e218ebd00491954091e添加了14个文档
+2026-04-19 18:37:58,982 - DocumentService - INFO - document_service.py:199 - 文档516947dc1a584f81844509e706735d3b处理完成,分块数量为14
+2026-04-19 18:38:00,760 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:38:00] "GET /kb/9c24c6efbb5e4e218ebd00491954091e HTTP/1.1" 200 -
+2026-04-19 18:38:03,194 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:38:03] "GET /kb HTTP/1.1" 200 -
+2026-04-19 18:38:03,210 - app.services.storage.local_storage - INFO - local_storage.py:47 - 文件已经下载成功:C:\Users\m7300\Desktop\smart_rag_v3\storages\covers\9c24c6efbb5e4e218ebd00491954091e.jpg
+2026-04-19 18:38:03,210 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:38:03] "GET /kb/9c24c6efbb5e4e218ebd00491954091e/cover HTTP/1.1" 200 -
+2026-04-19 18:38:21,414 - KnowledgebaseService - INFO - knowledgebase_service.py:215 - 更新知识库:9c24c6efbb5e4e218ebd00491954091e 简历
+2026-04-19 18:38:21,420 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:38:21] "PUT /api/v1/kb/9c24c6efbb5e4e218ebd00491954091e HTTP/1.1" 200 -
+2026-04-19 18:38:21,678 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:38:21] "GET /kb HTTP/1.1" 200 -
+2026-04-19 18:38:21,741 - app.services.storage.local_storage - INFO - local_storage.py:47 - 文件已经下载成功:C:\Users\m7300\Desktop\smart_rag_v3\storages\covers\9c24c6efbb5e4e218ebd00491954091e.jpg
+2026-04-19 18:38:21,742 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:38:21] "GET /kb/9c24c6efbb5e4e218ebd00491954091e/cover HTTP/1.1" 200 -
+2026-04-19 18:38:24,449 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:38:24] "GET /kb/9c24c6efbb5e4e218ebd00491954091e HTTP/1.1" 200 -
+2026-04-19 18:38:27,716 - DocumentService - INFO - document_service.py:91 - 提交文档处理任务:516947dc1a584f81844509e706735d3b
+2026-04-19 18:38:27,717 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:38:27] "POST /api/v1/documents/516947dc1a584f81844509e706735d3b/process HTTP/1.1" 200 -
+2026-04-19 18:38:27,717 - DocumentService - INFO - document_service.py:106 - 开始处理文档:516947dc1a584f81844509e706735d3b
+2026-04-19 18:38:27,856 - app.services.vectordb.chroma - INFO - chroma.py:56 - 已通过filter条件删除14个文档
+2026-04-19 18:38:27,857 - app.services.vectordb.chroma - INFO - chroma.py:84 - 已经从ChromDB集合kb_9c24c6efbb5e4e218ebd00491954091e删除文档
+2026-04-19 18:38:27,857 - DocumentService - INFO - document_service.py:152 - 文档516947dc1a584f81844509e706735d3b状态已经更新为processing状态了
+2026-04-19 18:38:27,857 - app.services.storage.local_storage - INFO - local_storage.py:47 - 文件已经下载成功:C:\Users\m7300\Desktop\smart_rag_v3\storages\documents\9c24c6efbb5e4e218ebd00491954091e\516947dc1a584f81844509e706735d3b\简历.pdf
+2026-04-19 18:38:28,114 - DocumentService - INFO - document_service.py:157 - 加载到2个文档
+2026-04-19 18:38:28,115 - DocumentService - INFO - document_service.py:168 - 加载到7个分块
+2026-04-19 18:38:28,611 - app.services.vectordb.chroma - INFO - chroma.py:35 - 已经向ChromDB集合kb_9c24c6efbb5e4e218ebd00491954091e添加了7个文档
+2026-04-19 18:38:28,619 - DocumentService - INFO - document_service.py:199 - 文档516947dc1a584f81844509e706735d3b处理完成,分块数量为7
+2026-04-19 18:38:30,701 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:38:30] "GET /kb/9c24c6efbb5e4e218ebd00491954091e HTTP/1.1" 200 -
+2026-04-19 18:38:30,714 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:38:30] "GET /documents/516947dc1a584f81844509e706735d3b/chunks HTTP/1.1" 200 -
+2026-04-19 18:38:33,011 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:38:33] "GET /documents/516947dc1a584f81844509e706735d3b/chunks HTTP/1.1" 200 -
+2026-04-19 18:38:40,096 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:38:40] "GET /kb/9c24c6efbb5e4e218ebd00491954091e HTTP/1.1" 200 -
+2026-04-19 18:38:43,998 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:38:43] "GET /chat HTTP/1.1" 200 -
+2026-04-19 18:38:44,306 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:38:44] "GET /api/v1/sessions HTTP/1.1" 200 -
+2026-04-19 18:39:06,626 - ChatSessionService - INFO - chat_session_service.py:23 - 已经创建聊天会话:105bc56ed09b4f72afedf4c1dc9876d7
+2026-04-19 18:39:06,632 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:39:06] "POST /api/v1/sessions HTTP/1.1" 200 -
+2026-04-19 18:39:06,887 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:39:06] "GET /api/v1/sessions HTTP/1.1" 200 -
+2026-04-19 18:39:07,021 - app.utils.llm_factory - INFO - llm_factory.py:54 - 已经创建DeepSeek LLM:{model_name}
+2026-04-19 18:39:07,022 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:39:07] "POST /api/v1/chat HTTP/1.1" 200 -
+2026-04-19 18:39:07,218 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:39:07] "GET /api/v1/sessions HTTP/1.1" 200 -
+2026-04-19 18:39:07,486 - httpx - INFO - _client.py:1025 - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2026-04-19 18:39:07,488 - app.services.chat_service - ERROR - chat_service.py:35 - 流式生成时出错:Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-04-19 18:43:06,962 - app.utils.llm_factory - INFO - llm_factory.py:54 - 已经创建DeepSeek LLM:{model_name}
+2026-04-19 18:43:06,963 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:43:06] "POST /api/v1/chat HTTP/1.1" 200 -
+2026-04-19 18:43:07,035 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:43:07] "GET /api/v1/sessions HTTP/1.1" 200 -
+2026-04-19 18:43:07,246 - httpx - INFO - _client.py:1025 - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-19 18:43:15,759 - ChatSessionService - INFO - chat_session_service.py:53 - 已经删除了1个聊天会话
+2026-04-19 18:43:15,768 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:43:15] "DELETE /api/v1/sessions HTTP/1.1" 200 -
+2026-04-19 18:43:16,096 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:43:16] "GET /api/v1/sessions HTTP/1.1" 200 -
+2026-04-19 18:43:19,706 - ChatSessionService - INFO - chat_session_service.py:23 - 已经创建聊天会话:f747b99666ce487991973868487a4346
+2026-04-19 18:43:19,712 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:43:19] "POST /api/v1/sessions HTTP/1.1" 200 -
+2026-04-19 18:43:20,037 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:43:20] "GET /api/v1/sessions HTTP/1.1" 200 -
+2026-04-19 18:43:20,362 - app.utils.llm_factory - INFO - llm_factory.py:54 - 已经创建DeepSeek LLM:{model_name}
+2026-04-19 18:43:20,362 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:43:20] "POST /api/v1/knowledgebases/9c24c6efbb5e4e218ebd00491954091e/chat HTTP/1.1" 200 -
+2026-04-19 18:43:20,373 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:43:20] "GET /api/v1/sessions HTTP/1.1" 200 -
+2026-04-19 18:43:20,505 - app.services.retrieval_service - INFO - retrieval_service.py:48 - 向量检索 ：检索到5个文档
+2026-04-19 18:43:21,454 - app.services.retrieval_service - INFO - retrieval_service.py:180 - BM25关键词本文检索 ：检索到5个文档
+2026-04-19 18:43:21,454 - app.services.retrieval_service - INFO - retrieval_service.py:252 - 混合检索(RRF):检索到5个文档
+2026-04-19 18:43:21,455 - app.services.rag_service - INFO - rag_service.py:42 - 使用hybrid模型检索到5个文档
+2026-04-19 18:43:21,644 - httpx - INFO - _client.py:1025 - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-19 18:43:43,848 - app.utils.llm_factory - INFO - llm_factory.py:54 - 已经创建DeepSeek LLM:{model_name}
+2026-04-19 18:43:43,848 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:43:43] "POST /api/v1/knowledgebases/9c24c6efbb5e4e218ebd00491954091e/chat HTTP/1.1" 200 -
+2026-04-19 18:43:43,916 - app.services.retrieval_service - INFO - retrieval_service.py:48 - 向量检索 ：检索到5个文档
+2026-04-19 18:43:43,999 - app.services.retrieval_service - INFO - retrieval_service.py:180 - BM25关键词本文检索 ：检索到5个文档
+2026-04-19 18:43:44,000 - app.services.retrieval_service - INFO - retrieval_service.py:252 - 混合检索(RRF):检索到5个文档
+2026-04-19 18:43:44,000 - app.services.rag_service - INFO - rag_service.py:42 - 使用hybrid模型检索到5个文档
+2026-04-19 18:43:44,042 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:43:44] "GET /api/v1/sessions HTTP/1.1" 200 -
+2026-04-19 18:43:44,273 - httpx - INFO - _client.py:1025 - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-19 18:44:47,379 - app.utils.llm_factory - INFO - llm_factory.py:54 - 已经创建DeepSeek LLM:{model_name}
+2026-04-19 18:44:47,379 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:44:47] "POST /api/v1/knowledgebases/9c24c6efbb5e4e218ebd00491954091e/chat HTTP/1.1" 200 -
+2026-04-19 18:44:47,461 - app.services.retrieval_service - INFO - retrieval_service.py:48 - 向量检索 ：检索到5个文档
+2026-04-19 18:44:47,584 - app.services.retrieval_service - INFO - retrieval_service.py:180 - BM25关键词本文检索 ：检索到5个文档
+2026-04-19 18:44:47,584 - app.services.retrieval_service - INFO - retrieval_service.py:252 - 混合检索(RRF):检索到5个文档
+2026-04-19 18:44:47,584 - app.services.rag_service - INFO - rag_service.py:42 - 使用hybrid模型检索到5个文档
+2026-04-19 18:44:47,613 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 18:44:47] "GET /api/v1/sessions HTTP/1.1" 200 -
+2026-04-19 18:44:47,870 - httpx - INFO - _client.py:1025 - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-19 20:02:16,806 - app.utils.llm_factory - INFO - llm_factory.py:54 - 已经创建DeepSeek LLM:{model_name}
+2026-04-19 20:02:16,806 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 20:02:16] "POST /api/v1/knowledgebases/9c24c6efbb5e4e218ebd00491954091e/chat HTTP/1.1" 200 -
+2026-04-19 20:02:16,948 - werkzeug - INFO - _internal.py:97 - 127.0.0.1 - - [19/Apr/2026 20:02:16] "GET /api/v1/sessions HTTP/1.1" 200 -
+2026-04-19 20:02:16,955 - app.services.retrieval_service - INFO - retrieval_service.py:48 - 向量检索 ：检索到5个文档
+2026-04-19 20:02:17,072 - app.services.retrieval_service - INFO - retrieval_service.py:180 - BM25关键词本文检索 ：检索到5个文档
+2026-04-19 20:02:17,073 - app.services.retrieval_service - INFO - retrieval_service.py:252 - 混合检索(RRF):检索到5个文档
+2026-04-19 20:02:17,073 - app.services.rag_service - INFO - rag_service.py:42 - 使用hybrid模型检索到5个文档
+2026-04-19 20:02:17,343 - httpx - INFO - _client.py:1025 - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
